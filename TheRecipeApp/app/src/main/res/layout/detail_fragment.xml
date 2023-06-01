@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/recipeDetailAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/overviewTextView" />
+
+        <TextView
+            android:id="@+id/overviewTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Overview"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/recipeNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Recipe Name"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recipeDetailAvatar" />
+
+        <ImageView
+            android:id="@+id/vegetarianIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_gray_leaf"
+            app:layout_constraintStart_toStartOf="@id/recipeNameTextView"
+            app:layout_constraintTop_toBottomOf="@id/recipeNameTextView" />
+
+        <TextView
+            android:id="@+id/vegetarianTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vegetarian"
+            app:layout_constraintStart_toEndOf="@id/vegetarianIcon"
+            app:layout_constraintTop_toTopOf="@id/vegetarianIcon" />
+
+        <ImageView
+            android:id="@+id/dairyIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_gray_leaf"
+            app:layout_constraintStart_toEndOf="@id/vegetarianTextView"
+            app:layout_constraintTop_toBottomOf="@id/glutenIcon" />
+
+        <TextView
+            android:id="@+id/dairyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dairy Free"
+            app:layout_constraintStart_toEndOf="@id/dairyIcon"
+            app:layout_constraintTop_toTopOf="@id/dairyIcon" />
+
+        <ImageView
+            android:id="@+id/veganIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_gray_leaf"
+            app:layout_constraintStart_toStartOf="@id/recipeNameTextView"
+            app:layout_constraintTop_toBottomOf="@id/vegetarianIcon" />
+
+        <TextView
+            android:id="@+id/veganTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vegan"
+            app:layout_constraintStart_toEndOf="@id/veganIcon"
+            app:layout_constraintTop_toTopOf="@id/veganIcon" />
+
+        <ImageView
+            android:id="@+id/glutenIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_gray_leaf"
+            app:layout_constraintStart_toEndOf="@id/vegetarianTextView"
+            app:layout_constraintTop_toBottomOf="@id/recipeNameTextView" />
+
+        <TextView
+            android:id="@+id/glutenTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gluten Free"
+            app:layout_constraintStart_toEndOf="@id/glutenIcon"
+            app:layout_constraintTop_toTopOf="@id/glutenIcon" />
+
+        <ImageView
+            android:id="@+id/healthyIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_gray_leaf"
+            app:layout_constraintStart_toEndOf="@id/glutenTextView"
+            app:layout_constraintTop_toBottomOf="@id/recipeNameTextView" />
+
+        <TextView
+            android:id="@+id/healthyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Healthy"
+            app:layout_constraintStart_toEndOf="@id/healthyIcon"
+            app:layout_constraintTop_toTopOf="@id/healthyIcon" />
+
+        <ImageView
+            android:id="@+id/cheapIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_gray_leaf"
+            app:layout_constraintStart_toEndOf="@id/glutenTextView"
+            app:layout_constraintTop_toBottomOf="@id/healthyIcon" />
+
+        <TextView
+            android:id="@+id/cheapTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cheap"
+            app:layout_constraintStart_toEndOf="@id/cheapIcon"
+            app:layout_constraintTop_toTopOf="@id/cheapIcon" />
+
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/veganIcon" />
+
+        <TextView
+            android:id="@+id/ingredientsTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingredients :"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/descriptionTextView" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ingredientsList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ingredientsTV"
+
+            />
+
+
+        <TextView
+            android:id="@+id/instructionsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:text="Instructions :"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ingredientsList" />
+
+
+        <TextView
+            android:id="@+id/recipeSteps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step 1: "
+            app:layout_constraintStart_toStartOf="@id/descriptionTextView"
+            app:layout_constraintTop_toBottomOf="@id/instructionsTextView" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
